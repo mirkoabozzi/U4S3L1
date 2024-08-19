@@ -1,0 +1,6 @@
+U4S3L1
+
+Es.1
+SELECT * FROM clienti where nome='Mario'
+
+Es.2
