@@ -29,3 +29,8 @@ SELECT EXTRACT(YEAR FROM data_fattura), COUNT(id_fattura) AS numero_fatture, SUM
 
 Es.9
 SELECT EXTRACT(YEAR FROM data_fattura) AS anno, COUNT(tipologia) AS tipologia FROM fatture WHERE tipologia='fattura' GROUP BY EXTRACT(YEAR FROM data_fattura) HAVING COUNT(TIPOLOGIA)>1
+
+Es.10
+SELECT regione_residenza, SUM(importo) AS totale_importi FROM fatture JOIN clienti ON fatture.id_cliente = clienti.id_cliente GROUP BY regione_residenza
+
+Es. 11
