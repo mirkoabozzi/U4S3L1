@@ -1,10 +1,13 @@
 U4S3L1
 
 Es.1
-SELECT * FROM clienti where nome='Mario'
+SELECT * FROM clienti WHERE nome='Mario'
 
 Es.2
 SELECT nome , cognome FROM clienti WHERE EXTRACT (YEAR FROM anno_di_nascita)= '1990'
 
 Es.3
-SELECT id_fattura FROM fatture where iva= 20
+SELECT id_fattura FROM fatture WHERE iva= 20
+
+ES.4
+SELECT descrizione FROM prodotti WHERE EXTRACT (YEAR FROM data_attivazione)>2017 AND in_produzione = 'true' OR in_commercio = 'true'
