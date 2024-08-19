@@ -23,3 +23,6 @@ JOIN fornitori ON fatture.id_fornitore = fornitori.id_fornitore
 
 Es.7
 SELECT data_fattura, count(*) AS numero_fatture FROM fatture WHERE iva=20 GROUP BY data_fattura
+
+ES.8
+SELECT EXTRACT(YEAR FROM data_fattura), COUNT(id_fattura) AS numero_fatture, SUM(importo) AS totale FROM fatture GROUP BY EXTRACT(YEAR FROM data_fattura)
