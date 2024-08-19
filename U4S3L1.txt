@@ -5,3 +5,6 @@ SELECT * FROM clienti where nome='Mario'
 
 Es.2
 SELECT nome , cognome FROM clienti WHERE EXTRACT (YEAR FROM anno_di_nascita)= '1990'
+
+Es.3
+SELECT id_fattura FROM fatture where iva= 20
