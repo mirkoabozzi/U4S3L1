@@ -20,3 +20,6 @@ WHERE importo < 1000
 Es.6
 SELECT id_fattura, importo, iva, data_fattura, fornitori.denominazione  FROM fatture
 JOIN fornitori ON fatture.id_fornitore = fornitori.id_fornitore
+
+Es.7
+SELECT data_fattura, count(*) AS numero_fatture FROM fatture WHERE iva=20 GROUP BY data_fattura
