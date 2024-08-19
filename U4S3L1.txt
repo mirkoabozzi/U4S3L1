@@ -4,3 +4,4 @@ Es.1
 SELECT * FROM clienti where nome='Mario'
 
 Es.2
+SELECT nome , cognome FROM clienti WHERE EXTRACT (YEAR FROM anno_di_nascita)= '1990'
