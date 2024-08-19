@@ -16,3 +16,7 @@ Es.5
 SELECT * FROM fatture
 JOIN clienti ON fatture.id_cliente = clienti.id_cliente
 WHERE importo < 1000
+
+Es.6
+SELECT id_fattura, importo, iva, data_fattura, fornitori.denominazione  FROM fatture
+JOIN fornitori ON fatture.id_fornitore = fornitori.id_fornitore
